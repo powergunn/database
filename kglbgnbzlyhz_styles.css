@@ -1,0 +1,512 @@
+/* =============================================================================
+   LAYARKU21 - MOVIE STREAMING PLATFORM STYLES
+   ============================================================================= */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    background: #000000;
+    color: #000000;
+    min-height: 100vh;
+}
+
+/* =============================================================================
+   HOME PAGE STYLES
+   ============================================================================= */
+
+.home-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #ffffff;
+    border: 2px solid #cccccc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: #dc2626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    border: 2px solid #cccccc;
+}
+
+.home-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #666666;
+}
+
+.home-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.example {
+    background: #fef3c7;
+    border: 2px solid #d97706;
+    padding: 15px;
+    margin: 20px 0;
+    font-family: 'Ubuntu Mono', monospace;
+    transition: all 0.3s ease;
+}
+
+.example:hover {
+    background: #fde68a;
+    transform: translateY(-2px);
+}
+
+.url {
+    color: #d97706;
+    font-weight: 700;
+    word-break: break-all;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.feature {
+    background: #ffffff;
+    padding: 15px;
+    border: 2px solid #cccccc;
+    color: #000000;
+}
+
+.feature-icon {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #dc2626;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 20px;
+    background: #f5f5f5;
+    border: 2px solid #cccccc;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #dc2626;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+/* =============================================================================
+   MOVIE PAGE STYLES
+   ============================================================================= */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+    background: #ffffff;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.movie-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    border: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.whatsapp { background: #25D366; }
+.telegram { background: #0088cc; }
+.facebook { background: #1877f2; }
+.twitter { background: #1da1f2; }
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Video Section */
+.video-section {
+    background: #ffffff;
+    border: 2px solid #cccccc;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.video-header {
+    background: #dc2626;
+    color: white;
+    padding: 15px 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.video-player {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #000;
+}
+
+.video-player iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-controls {
+    display: flex;
+    justify-content: center;
+    padding: 12px 15px;
+    background: #f5f5f5;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.control-btn {
+    padding: 8px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+}
+
+.fullscreen { background: #dc2626; }
+.comments { background: #059669; }
+.trailer { background: #7c3aed; }
+.report { background: #f59e0b; }
+.cinema { background: #3b82f6; }
+.popup { background: #10b981; }
+
+.control-btn:hover {
+    opacity: 0.8;
+    transform: translateY(-1px);
+}
+
+/* Download Section */
+.download-section {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 3px;
+    border-radius: 0;
+    border: 1px solid #cccccc;
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.download-primary { background: #10b981; }
+.download-secondary { background: #6b7280; }
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Movie Info Section */
+.movie-info-section {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 20px;
+    background: #ffffff;
+    border: 2px solid #cccccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.movie-poster {
+    width: 100%;
+    border: 1px solid #cccccc;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+}
+
+.info-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #cccccc;
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+.info-table td:first-child {
+    font-weight: 700;
+    width: 110px;
+    color: #d97706;
+    background: #fef3c7;
+    border-right: 1px solid #cccccc;
+}
+
+.synopsis {
+    flex: 1;
+}
+
+.synopsis h3 {
+    color: #d97706;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #cccccc;
+    padding: 8px 12px;
+    background: #fef3c7;
+}
+
+.synopsis p {
+    line-height: 1.6;
+    font-size: 0.9rem;
+    text-align: justify;
+    border: 1px solid #cccccc;
+    padding: 12px;
+    background: #ffffff;
+    color: #000000;
+}
+
+/* Loading and Error States */
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #f59e0b;
+}
+
+.error {
+    text-align: center;
+    padding: 40px;
+    color: #dc2626;
+    background: rgba(220, 38, 38, 0.1);
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* =============================================================================
+   404 PAGE STYLES
+   ============================================================================= */
+
+.error-container {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+}
+
+.error-content {
+    max-width: 500px;
+    padding: 40px;
+}
+
+.error-title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.error-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+.back-btn:hover {
+    background: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
+}
+
+/* =============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================= */
+
+@media (max-width: 768px) {
+    /* Home Page Mobile */
+    .home-container {
+        padding: 20px;
+        min-height: 100vh;
+    }
+    
+    .home-title {
+        font-size: 2rem;
+    }
+    
+    .stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Movie Page Mobile */
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .movie-title {
+        font-size: 1.8rem;
+    }
+
+    .social-buttons {
+        justify-content: center;
+    }
+
+    .video-player {
+        height: 300px;
+    }
+
+    .video-controls {
+        justify-content: center;
+    }
+
+    .control-btn {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+    .social-buttons {
+        gap: 5px;
+    }
+
+    .social-btn {
+        padding: 5px 10px;
+        font-size: 0.75rem;
+    }
+
+    .movie-info-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .movie-poster {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-title {
+        font-size: 1.5rem;
+    }
+
+    .video-player {
+        height: 250px;
+    }
+
+    .movie-info-section {
+        padding: 12px;
+    }
+
+    .info-table td {
+        font-size: 0.8rem;
+        padding: 6px 8px;
+    }
+
+    .synopsis p {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .info-table td:first-child {
+        width: 90px;
+    }
+}
